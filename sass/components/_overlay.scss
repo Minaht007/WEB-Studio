@@ -1,14 +1,18 @@
 .overlay {
     position: relative;
     overflow: hidden;
-
+    z-index: -1;
 }
 
 .overlay__text {
     position: absolute;
-    display: inline-block;
+    
     top: 0;
     left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: 100%;
@@ -21,7 +25,10 @@
 
     background-color: rgba(33, 150, 243, 0.9);
 
-    padding: 63px 24px;
+    // @media screen and (max-width:767px) {
+    //     padding: 77px 24px;
+    // }
+    padding: 0 24px;
     transform: translateY(100%);
     transition: background-color $animation-cubic,
         opacity $animation-cubic,

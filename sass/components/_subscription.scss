@@ -1,7 +1,16 @@
 .subscription {
 
-    margin-left: auto;
-
+    @media screen and (max-width: 1199px) { 
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    
+    }
+    
+    
 }
 
 .subscription__title {
@@ -35,6 +44,15 @@
     &:focus {
             border-color: $hover-color;
         }
+
+    @media screen and (max-width: 1199px) {
+        width: 100%;
+    }   
+    
+    // @media screen and (max-width: 400px) {
+    //     // width: 75%;
+    //     width: calc(100% - 30px);
+    // }
 }
 
 
@@ -46,7 +64,7 @@
 
 .subscription__btn {
     position: relative;
-    margin-left: 12px;
+    
 
     padding: 10px 62px 10px 29px;
 
@@ -68,6 +86,7 @@
     font-family: inherit;
     cursor: pointer;
 
+    z-index: 0;
 
     transition: background-color $animation-cubic, box-shadow $animation-cubic;
 
@@ -77,6 +96,15 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
         }
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 20px;
+        
+    }   
+    
+    @media screen and (min-width: 1200px) { 
+        margin-left: 12px;
+    }
 }
 
 .subscription__icon {

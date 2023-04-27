@@ -1,11 +1,14 @@
 .nav {
     // @extend %list;
+    display: none;
 
+
+    @media screen and (min-width:768px) {
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
-
-
+    }
+    
 }
 
 .nav__item+.nav__item {
@@ -37,6 +40,8 @@
      position: relative;
 
     color: $hover-color;
+
+    z-index: -1;
 
      &:after {
          content: "";

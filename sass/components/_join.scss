@@ -1,6 +1,17 @@
 .join {
-    margin-left: 70px;
+    // margin-left: 70px;
 
+    @media screen and (max-width: 1199px) {
+    text-align: center;
+    }
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     margin-left: 70px;
+    // }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+    }
 }
 
 .join__title {
@@ -17,7 +28,8 @@
 
 .join__list {
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 

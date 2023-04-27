@@ -22,16 +22,61 @@
 		<header class="header header-line">
 			<div class="header__group container">
 				<nav class="header__nav">
-<a class="logo link-decor logo-decor" href="./index.html"> Web<span class="logo-dark">Studio</span></a>
+					<a class="logo link-decor logo-decor" href="./index.html"> Web<span class="logo-dark">Studio</span></a>
+
+					<button type="button" class="burger-btn" data-menu-button>
+						<svg class="burger-mobil" width="40" height="40">
+							<use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+							<use class="icon-close" href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+
+					<!-- Mobile menu -->
+					<div class="mobile-menu" data-menu>
+						<ul class="mobile-list-nav list">
+							<li class="mobile-item-nav">
+								<a class="mobile-link-nav link-decor " href="./index.html">Студія</a>
+							</li>
+							<li class="mobile-item-nav">
+								<a class="mobile-link-nav link-decor active" href="./portfolio.html">Портфоліо</a>
+							</li>
+							<li class="mobile-item-nav">
+								<a class="mobile-link-nav link-decor" href="#footer">Контакти</a>
+							</li>
+						</ul>
+
+						<ul class="mobile-list-contact list">
+							<li class="mobile-item-contact">
+								<a class="mobile-link-phone link-decor" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+							<li class="mobile-item-contact">
+								<a class="mobile-link-mail link-decor" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-list-networks list">
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">Instagram</a>
+							</li>
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">Twitter</a>
+							</li>
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">Facebook</a>
+							</li>
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
 
 					<ul class="nav list">
-						<li class="nav__item"> 
+						<li class="nav__item">
 							<a class="nav__link link-decor " href="./index.html">Студія</a>
 						</li>
-						<li class="nav__item"> 
+						<li class="nav__item">
 							<a class="nav__link link-decor nav__link--active" href="./portfolio.html">Портфоліо</a>
 						</li>
-						<li class="nav__item"> 
+						<li class="nav__item">
 							<a class="nav__link link-decor" href="#footer">Контакти</a>
 						</li>
 					</ul>
@@ -76,7 +121,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img.jpg" alt="laptop" width="370" />
+									<img srcset="./images/porfolio/img1.jpg 450w, ./images/porfolio/img1@2x.jpg 900w, ./images/porfolio/img1@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img1.jpg" alt="laptop"  />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -90,9 +137,11 @@
 						</li>
 
 						<li class="proposition__item">
-							<a class="proposition__link " href="">
+							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img1.jpg" alt="basketball" width="370" />
+									<img srcset="./images/porfolio/img2.jpg 450w, ./images/porfolio/img2@2x.jpg 900w, ./images/porfolio/img2@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img2.jpg" alt="laptop"  />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -108,7 +157,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img2.jpg" alt=" logo Seafood restaurant" width="370" />
+									<img srcset="./images/porfolio/img3.jpg 450w, ./images/porfolio/img3@2x.jpg 900w, ./images/porfolio/img3@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img3.jpg" alt=" logo Seafood restaurant" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -124,7 +175,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img3.jpg" alt="headphone" width="370" />
+									<img srcset="./images/porfolio/img4.jpg 450w, ./images/porfolio/img4@2x.jpg 900w, ./images/porfolio/img4@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img4.jpg" alt="headphone" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -140,7 +193,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img4.jpg" alt="two small boxes" width="370" />
+									<img srcset="./images/porfolio/img5.jpg 450w, ./images/porfolio/img5@2x.jpg 900w, ./images/porfolio/img5@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img5.jpg" alt="two small boxes" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -156,7 +211,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img5.jpg" alt="monitor" width="370" />
+									<img srcset="./images/porfolio/img6.jpg 450w, ./images/porfolio/img6@2x.jpg 900w, ./images/porfolio/img6@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img6.jpg" alt="monitor" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -172,7 +229,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img6.jpg" alt="a book" width="370" />
+									<img srcset="./images/porfolio/img7.jpg 450w, ./images/porfolio/img7@2x.jpg 900w, ./images/porfolio/img7@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img7.jpg" alt="a book" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -188,7 +247,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img7.jpg" alt="some label" width="370" />
+									<img srcset="./images/porfolio/img8.jpg 450w, ./images/porfolio/img8@2x.jpg 900w, ./images/porfolio/img8@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img8.jpg" alt="some label" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -204,7 +265,9 @@
 						<li class="proposition__item">
 							<a class="proposition__link" href="">
 								<div class="overlay">
-									<img src="images/img8.jpg" alt="some one work at laptop" width="370" />
+									<img srcset="./images/porfolio/img9.jpg 450w, ./images/porfolio/img9@2x.jpg 900w, ./images/porfolio/img9@3x.jpg 1350w"
+									sizes="100vw"
+									src="images/porfolio/img9.jpg" alt="some one work at laptop" />
 									<p class="overlay__text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -222,9 +285,9 @@
 		</main>
 		<!-- footer -->
 		<footer id="footer" class="footer">
-			<div class="footer__group container ">
+			<div class="footer__group container">
 				<div class="group">
-					<a class="footer__link link-decor " href="./index.html">
+					<a class="footer__link link-decor" href="./index.html">
 						<span class="logo">Web</span><span class="footer--logo-white">Studio</span>
 					</a>
 					<address class="address">
@@ -273,7 +336,7 @@
 							</a>
 						</li>
 						<li class="join__item">
-							<a class="join__link  link-decor" href="">
+							<a class="join__link link-decor" href="">
 								<svg class="join__icon">
 									<use href="./images/icons.svg#icon-linkedin"></use>
 								</svg>
@@ -299,5 +362,6 @@
 			</div>
 		</footer>
 
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

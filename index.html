@@ -25,14 +25,59 @@
 				<nav class="header__nav">
 					<a class="logo link-decor logo-decor" href="./index.html"> Web<span class="logo-dark">Studio</span></a>
 
+					<button type="button" class="burger-btn" data-menu-button>
+						<svg class="burger-mobil" width="40" height="40">
+							<use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+							<use class="icon-close icon-fixed" href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+
+					<!-- Mobile menu -->
+					<div class="mobile-menu" data-menu>
+						<ul class="mobile-list-nav list">
+							<li class="mobile-item-nav">
+								<a class="mobile-link-nav link-decor active" href="./index.html">Студія</a>
+							</li>
+							<li class="mobile-item-nav">
+								<a class="mobile-link-nav link-decor" href="./portfolio.html">Портфоліо</a>
+							</li>
+							<li class="mobile-item-nav">
+								<a class="mobile-link-nav link-decor" href="#footer">Контакти</a>
+							</li>
+						</ul>
+
+						<ul class="mobile-list-contact list">
+							<li class="mobile-item-contact">
+								<a class="mobile-link-phone link-decor" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+							<li class="mobile-item-contact">
+								<a class="mobile-link-mail link-decor" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+						<ul class="mobile-list-networks list">
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">Instagram</a>
+							</li>
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">Twitter</a>
+							</li>
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">Facebook</a>
+							</li>
+							<li class="mobile-item-networks">
+								<a class="mobile-link-networks link-decor" href="">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+
 					<ul class="nav list">
-						<li class="nav__item"> 
+						<li class="nav__item">
 							<a class="nav__link link-decor nav__link--active" href="./index.html">Студія</a>
 						</li>
-						<li class="nav__item"> 
+						<li class="nav__item">
 							<a class="nav__link link-decor" href="./portfolio.html">Портфоліо</a>
 						</li>
-						<li class="nav__item"> 
+						<li class="nav__item">
 							<a class="nav__link link-decor" href="#footer">Контакти</a>
 						</li>
 					</ul>
@@ -101,7 +146,13 @@
 
 						<label class="form__label" for="comment">
 							<span class="form__name">Коментарій</span>
-							<textarea class="form__textarea" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+							<textarea
+								class="form__textarea"
+								name="comment"
+								id="comment"
+								rows="10"
+								placeholder="Введіть текст"
+							></textarea>
 						</label>
 
 						<label class="confirm">
@@ -115,12 +166,13 @@
 					</form>
 				</div>
 			</div>
+
 			<!--Наші сильні сторони-->
 			<section class="features section">
 				<div class="container">
 					<h2 class="visually-hidden">Наші сильні сторони</h2>
 					<ul class="features__list list">
-						<li class="features__item ">
+						<li class="features__item">
 							<div class="features__decor">
 								<svg class="features__icon">
 									<use href="./images/icons.svg#icon-antenna"></use>
@@ -131,7 +183,7 @@
 								Ідейні міркування, а також початок повсякденної роботи з формування позиції.
 							</p>
 						</li>
-						<li class="features__item ">
+						<li class="features__item">
 							<div class="features__decor">
 								<svg class="features__icon">
 									<use href="./images/icons.svg#icon-clock"></use>
@@ -169,12 +221,12 @@
 			<section class="work">
 				<div class="container">
 					<h2 class="section-hero">Чим ми займаємось</h2>
-					<ul class="work__list list ">
+					<ul class="work__list list">
 						<li class="work__item">
 							<img src="images/image_lessons1.jpg" alt="Somebory write code" width="370" />
 							<p class="work__text">Десктопні програми</p>
 						</li>
-						<li class="work__item ">
+						<li class="work__item">
 							<img src="images/image_lessons11.jpg" alt="phone and laptop" width="370" />
 							<p class="work__text">Мобільні додатки</p>
 						</li>
@@ -191,7 +243,16 @@
 					<h2 class="section-hero">Наша команда</h2>
 					<ul class="team__list list">
 						<li class="team__item">
-							<img src="images/foto1.jpg" alt="Product Designer" width="270" height="260" />
+							<img
+								srcset="
+									./images/mobile/foto1-270.jpg    270w,
+									./images/mobile/foto1-540@2x.jpg 540w,
+									./images/foto1.jpg               810w
+								"
+								sizes="100vw"
+								src="images/mobile/foto1-270.jpg"
+								alt="Product Designer"
+							/>
 							<div class="team__decor">
 								<h3 class="team__name">Ігор Дем'яненко</h3>
 								<p class="team__profesion">Product Designer</p>
@@ -229,7 +290,16 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="images/foto2.jpg" alt="Developer" width="270" height="260" />
+							<img
+								srcset="
+									./images/mobile/foto2-270.jpg    270w,
+									./images/mobile/foto2-540@2x.jpg 540w,
+									./images/foto2.jpg               810w
+								"
+								sizes="100vw"
+								src="images/mobile/foto2-270.jpg"
+								alt="Developer"
+							/>
 							<div class="team__decor">
 								<h3 class="team__name">Ольга Репіна</h3>
 								<p class="team__profesion">Frontend Developer</p>
@@ -266,7 +336,16 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="images/foto3.jpg" alt="Marketing" width="270" height="260" />
+							<img
+								srcset="
+									./images/mobile/foto3-270.jpg    270w,
+									./images/mobile/foto3-540@2x.jpg 540w,
+									./images/foto3.jpg               810w
+								"
+								sizes="100vw"
+								src="images/mobile/foto3-270.jpg"
+								alt="Marketing"
+							/>
 							<div class="team__decor">
 								<h3 class="team__name">Микола Тарасов</h3>
 								<p class="team__profesion">Marketing</p>
@@ -303,7 +382,16 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="images/foto4.jpg" alt="UI Designer" width="270" height="260" />
+							<img
+								srcset="
+									./images/mobile/foto4-270.jpg    270w,
+									./images/mobile/foto4-540@2x.jpg 540w,
+									./images/foto4.jpg               810w
+								"
+								sizes="100vw"
+								src="images/mobile/foto4-270.jpg"
+								alt="UI Designer"
+							/>
 							<div class="team__decor">
 								<h3 class="team__name">Михайло Єрмаков</h3>
 								<p class="team__profesion">UI Designer</p>
@@ -393,13 +481,12 @@
 					</ul>
 				</div>
 			</section>
-			
 		</main>
 		<!-- footer -->
 		<footer id="footer" class="footer">
-			<div class="footer__group container ">
+			<div class="footer__group container">
 				<div class="group">
-					<a class="footer__link link-decor " href="./index.html">
+					<a class="footer__link link-decor" href="./index.html">
 						<span class="logo">Web</span><span class="footer--logo-white">Studio</span>
 					</a>
 					<address class="address">
@@ -448,7 +535,7 @@
 							</a>
 						</li>
 						<li class="join__item">
-							<a class="join__link  link-decor" href="">
+							<a class="join__link link-decor" href="">
 								<svg class="join__icon">
 									<use href="./images/icons.svg#icon-linkedin"></use>
 								</svg>
@@ -475,5 +562,6 @@
 		</footer>
 
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

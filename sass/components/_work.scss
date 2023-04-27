@@ -2,7 +2,11 @@
 .work {
     // @extend %container;
     padding-bottom: 94px;
-    $item:3;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block; 
+    }
 }
 
 .work__list {

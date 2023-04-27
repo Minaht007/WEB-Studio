@@ -1,13 +1,29 @@
 .header__group {
     
-    // @extend %container;
+    // position: relative;
 
-    display: flex;
-    align-items: center;
+    @media screen and (min-width:768px) {
+
+        display: flex;
+        align-items: center;
+    }
+    
 
 
     .header__nav {
+            
+            
             display: flex;
             align-items: center;
+            justify-content: space-between;
+        
+            
+            // @media screen and (min-width:1200px) {
+            //     display: flex;
+            //     align-items: center;
+            // }
         }
+
+
+
 }

@@ -1,0 +1,166 @@
+// burger
+.burger-btn {
+
+    // position: fixed;
+    // top: 10px;
+    // right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background-color: transparent;
+    // margin-left: auto;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+         &:hover {
+             fill: $hover-color;
+         }
+}
+
+.burger-mobil { 
+    position: fixed;
+    // right: 0;
+    z-index: 2;
+    padding: 8px;
+
+}
+
+.burger-btn .icon-close { 
+    
+    transform: translateX(200%);  
+    transition: transform $animation-cubic; 
+}
+
+.burger-btn.is-open .icon-close {
+    transform: translateX(0);
+    
+}
+
+.burger-btn .icon-burger {
+    
+    transform: translateX(0);
+    transition: transform $animation-cubic;
+    
+
+}
+
+.burger-btn.is-open .icon-burger { 
+    
+    transform: translateX(200%);
+
+   
+    
+}
+
+// MENU
+
+.mobile-menu { 
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 48px 0 48px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $main-backg-color;
+    
+
+
+    transform: translateX(-100%);
+    transition: transform $animation-cubic;
+
+    &.is-open { 
+        transform: translateX(0);
+        
+    }
+}
+
+.mobile-list-nav { 
+    margin-bottom: auto;
+}
+
+.mobile-item-nav { 
+    &:not(:last-child) { 
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-link-nav { 
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    
+    color: $main-color;
+}
+
+.active { 
+    color: $hover-color;
+}
+
+.mobile-item-contact { 
+    
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }  
+}
+
+.mobile-list-contact {
+    margin-bottom: 64px;
+}
+
+.mobile-link-phone { 
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    
+    color: $hover-color;
+}
+
+.mobile-link-mail { 
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    
+    color: $main-secondary-color;
+}
+
+.mobile-list-networks { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px   ;
+}
+
+.mobile-item-networks:not(:last-child) 
+.mobile-link-networks {
+        padding-right: 10px;
+        border-right: 1px solid $main-secondary-color;
+    }
+    
+
+
+.mobile-link-networks {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $hover-color;
+}
+
