@@ -1,0 +1,58 @@
+.join {
+    margin-left: 70px;
+
+}
+
+.join__title {
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $main-backg-color;
+}
+
+
+.join__list {
+    display: flex;
+
+}
+
+
+.join__link {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    color: $client-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color $animation-cubic;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+        &:focus {
+            background-color: $hover-color;
+    
+        }
+}
+
+
+
+.join__icon {
+
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    color: $main-backg-color;
+
+}
+
+.join__item:not(:last-child) {
+    margin-right: 10px;
+
+}

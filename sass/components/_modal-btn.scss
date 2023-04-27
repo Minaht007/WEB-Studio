@@ -1,0 +1,35 @@
+.modal-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    ;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: $main-backg-color;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: box-shadow $animation-cubic, fill $animation-cubic;
+
+    &:hover,
+        &:focus {
+            fill: $hover-color;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+}
+
+.modal-btn-icon {
+    width: 11px;
+    height: 11px;
+    align-self: center;
+
+}

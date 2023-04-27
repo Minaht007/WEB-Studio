@@ -1,0 +1,35 @@
+.customers__list {
+    display: flex;
+}
+
+.customers__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $client-color;
+    border-radius: 4px;
+    color: $client-color;
+
+    transition: color $animation-cubic,
+        border-color $animation-cubic;
+
+    &:hover,
+        &:focus {
+            color: $hover-color;
+            border-color: $hover-color;
+        }
+
+}
+
+.customers--icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+
+}

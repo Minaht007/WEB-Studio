@@ -1,0 +1,73 @@
+.footer {
+
+    padding: 60px 0;
+    background-color: $heder-backg-color;
+
+}
+
+//  .logo {
+//      color: $hover-color;
+
+//  }
+
+.footer__group {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer__link {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: $font-bolt;
+    font-size: 26px;
+    line-height: 1.19px;
+
+    letter-spacing: 0.03em;
+}
+
+.footer--logo-white {
+    color: $main-backg-color;
+
+}
+
+.address {
+    font-style: normal;
+}
+
+.address__item+.address__item {
+    margin-top: 9px;
+}
+
+
+.address__location {
+
+    color: $main-backg-color;
+    font-weight: 400;
+    line-height: 1.71;
+
+    transition: color $animation-cubic;
+
+    &:hover,
+        &:focus {
+            color: $hover-color;
+        }
+}
+
+
+.address__contact {
+    font-weight: 400;
+    line-height: 1.71;
+    color: $contact-footer;
+
+    transition: color $animation-cubic;
+
+    &:hover,
+        &:focus {
+            color: $hover-color;
+        }
+}
+

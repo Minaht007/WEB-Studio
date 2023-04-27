@@ -1,0 +1,38 @@
+.overlay {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.overlay__text {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: $main-backg-color;
+
+    opacity: 0;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: background-color $animation-cubic,
+        opacity $animation-cubic,
+        transform $animation-cubic;
+
+        .proposition__link:hover &,
+            .proposition__link:focus & {
+        
+                opacity: 1;
+                transform: translateY(0);
+            }
+}
+
+
